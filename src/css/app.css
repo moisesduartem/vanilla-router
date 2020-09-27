@@ -64,3 +64,9 @@ footer {
     align-items: center;
     grid-area: f;
 }
+
+@media (max-width: 500px) {
+    aside {
+        display: none;
+    }
+}
