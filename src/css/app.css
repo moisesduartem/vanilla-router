@@ -1,10 +1,12 @@
-body {
-    background-color: #1b1b1b;
-}
-
 * {
     font-family: Arial, sans-serif;
     color: #DDD;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b1b1b;
+    margin: 0;
 }
 
 a {
@@ -13,4 +15,33 @@ a {
 
 footer a {
     color: #b3cdff;
+}
+
+/* Layout Grid */
+
+.container {    
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 10vh 10vh 10vh;
+    grid-template-areas: "h h h" "a m m" "f f f";
+}
+
+header {
+    background-color: green;
+    grid-area: h;
+}
+
+aside {
+    background-color: blue;
+    grid-area: a;
+}
+
+main {
+    background-color: yellow;
+    grid-area: m;
+}
+
+footer {
+    background-color: red;
+    grid-area: f;
 }
