@@ -1,0 +1,16 @@
+body {
+    background-color: #1b1b1b;
+}
+
+* {
+    font-family: Arial, sans-serif;
+    color: #DDD;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer a {
+    color: #b3cdff;
+}
