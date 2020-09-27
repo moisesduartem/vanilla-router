@@ -22,26 +22,36 @@ footer a {
 .container {    
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
-    grid-template-rows: 10vh 10vh 10vh;
+    grid-template-rows: 8vh 10vh 6vh;
     grid-template-areas: "h h h" "a m m" "f f f";
 }
 
 header {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: green;
     grid-area: h;
 }
 
 aside {
+    padding: 20px;
     background-color: blue;
     grid-area: a;
 }
 
 main {
+    padding: 15px;
     background-color: yellow;
     grid-area: m;
 }
 
 footer {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: red;
     grid-area: f;
 }
