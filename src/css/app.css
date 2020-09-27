@@ -1,11 +1,17 @@
+:root {
+    --dark: #2e2e2e;
+    --shadow: 2px 2px;
+    --white: #ffffff;
+    --light: #f1f1f1;
+}
+
 * {
     font-family: Arial, sans-serif;
-    color: #DDD;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #1b1b1b;
+    background-color: var(--white);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -17,7 +23,7 @@ a {
 }
 
 footer a {
-    color: #b3cdff;
+    color: var(--dark);
 }
 
 /* Layout Grid */
@@ -25,36 +31,36 @@ footer a {
 .container {    
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 10vh 80vh 10vh;
-    grid-template-areas: "h h" "a m" "f f";
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-areas: "h h" "a m" "a f";
 }
 
 header {
+    color: var(--white);
     padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color: var(--dark);
     grid-area: h;
 }
 
 aside {
+    /* display: none; */
     padding: 20px;
-    background-color: blue;
+    background-color: var(--light);
     grid-area: a;
 }
 
 main {
     padding: 15px;
-    background-color: yellow;
     grid-area: m;
 }
 
 footer {
-    padding: 15px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
     grid-area: f;
 }
